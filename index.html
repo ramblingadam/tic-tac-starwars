@@ -1,0 +1,184 @@
+<!-- Copyright 2022 Adam Morsa / @ramblingadam. All rights reserved. -->
+<!-- All Star Wars assets, images, and sounds are copyright Disney. -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Grab a friend and choose your side: the Rebel Alliance or the Galactic Empire. Deploy your starfighters and outmaneuver the enemy in this fresh, fun take on an old classic.">
+    	<meta name="keywords" content="star, wars, game, xwing, x-wing, x wing, tie, fighter, tie figher, play">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>X-WING VS TIE FIGHTER</title>
+
+		<!-- Font-Awesome Icons -->
+		<script src="https://kit.fontawesome.com/ab085a1591.js" crossorigin="anonymous"></script>
+
+
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet"> 
+
+		<!-- LOCAL FONTS -->
+		
+
+		<!-- external CSS link -->
+		<!-- <link rel="stylesheet" href="css/reset.css"> -->
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- Toys FavIcon -->
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	</head>
+	<body>
+		<!-- BACKGROUND AUDIO: -->
+		<audio id ="musicBG" autoplay loop src="assets/sound/Music-Duel_Fates.mp3"></audio>
+		<audio id ="ambientBG" autoplay loop src="assets/sound/Ambient-Space_Battle.mp3"></audio>
+
+		<!-- BACKGROUND VIDEO: -->
+		<video id="background-video" autoplay loop muted>
+			<source src="assets/starfield.mp4" type="video/mp4">
+		</video>
+
+		<!-- BACKGROUND AMBIENCE -->
+		<!-- <audio id="background-audio" src="assets/sound/Ambient-Space_Battle.mp3" autoplay loop volume=".2"></audio> -->
+
+		<!-- NEW GAME POPUP -->
+		<div class="newGameScreen">
+			<div class="newGameCard">
+				<div class="pageLoadText">
+					<h1>Welcome to X-Wing Vs TIE Fighter!</h1>
+					<p>Grab a friend for some hot-seat <span class="spanYellow">tic-tac-toe</span> action and choose your side- either the sinister <span class="spanRed">Galactic Empire</span> or the tenacious <span class="spanGreen">Rebel Alliance</span>. <span class="spanYellow">Deploy</span> your starfighters, <span class="spanYellow">outmaneuever</span> your opponent, and <span class="spanYellow">revel</span> in Star Wars fandom as you play this <span class="spanYellow">out-of-this-world</span> take on a timeless classic.</p>
+					<p>Now go, commander! The battle has already begun!</p>
+					<p>And may the <span class="spanYellow">Force</span> be with you, always.</span></p>
+				</div>
+				<h1>Who strikes first?</h1>
+				
+				<p class="btn" id="rebelsFirstBtn">Rebel Alliance</p>
+				<p class="btn" id="empireFirstBtn">Galactic Empire</p>
+			</div>
+		</div>
+
+		
+
+		<!-- CONTENT: -->
+		<div class="container">
+
+			
+			<!-- DRAW POPUP -->
+
+
+			<!-- HEADER/SYSTEM MESSAGES -->
+			<header>
+				<h1>X-Wing vs TIE Fighter</h1>
+				<div class="subheading">
+					<p class="author"><a href="https://twitter.com/RamblingAdam" target="_blank">by Adam Morsa <i class="fa-brands fa-twitter"></i></a></p>
+					<!-- <span id="musicMuteBtn"><i class="fa-solid fa-volume-high"></i></span> -->
+				</div>
+				<p class="messageTeaser">system_msg:</p>
+				<h2 id="messageOutput"></h2>
+
+				<!-- SETTINGS BUTTONS -->
+				<!-- <div class="settings">
+
+					<div class="settingBox">
+						<label for="ambienceCheckbox">Ambience</label>
+						<input type="checkbox" id="ambienceCheckbox">
+					</div>
+					<div class="settingBox">
+						<label for="musicCheckbox">Music</label>
+						<input type="checkbox" id="musicCheckbox">
+					</div>
+
+					<div class="settingBox">
+						<label for="sfxCheckbox">SFX</label>
+						<input type="checkbox" id="sfxCheckbox">
+					</label>
+					</div>
+
+				</div> -->
+			</header>
+
+			<!-- PLAYER STAT CARDS AND GAME BOARD -->
+			<main>
+				<!-- Player 1 Stats -->
+				<section class="playerStats" id="playerOneStats">
+					<div class="playerHeading">
+						<h2>REBELS</h2>			
+					</div>
+					<div class="logo">
+						<img src="assets/logoRebels_black.png">
+					</div>
+					<div class="score">
+						<h3>Score</h3>
+						<h3 class="scoreOutput" id="scoreOutputP1"></h3>
+					</div>
+				</section>
+
+				<!-- Game Board -->
+				<section class="board">
+					<div class="space" id="One1">
+						<img class="token" src="">
+					</div>
+					<div class="space" id="One2">
+						<img class="token" src="">
+					</div>
+					<div class="space" id="One3">
+						<img class="token" src="">
+					</div>
+					<div class="space" id="Two1">
+						<img class="token" src="">
+					</div>
+					<div class="space" id="Two2">
+						<img class="token" src="">
+					</div>
+					<div class="space" id="Two3">
+						<img class="token" src="">
+					</div>
+					<div class="space" id="Three1">
+						<img class="token" src="">
+					</div>
+					<div class="space" id="Three2">
+						<img class="token" src="">
+					</div>
+					<div class="space" id="Three3">
+						<img class="token" src="">
+					</div>
+				</section>
+
+				<!-- Player 2 Stats -->
+				<section class="playerStats" id="playerTwoStats">
+					<div class="playerHeading">	
+						<h2>EMPIRE</h2>
+						
+					</div>
+					<div class="logo">
+						<img src="assets/logoEmpire.png">
+					</div>
+					<div class="score">
+						<h3>Score</h3>
+						<h3 class="scoreOutput" id="scoreOutputP2"></h3>
+					</div>
+				</section>
+			</main>
+
+			<!-- FOOTER/RESET BUTTON -->
+			<footer>
+				<p id="reset" class="btn">Reset</p>
+			</footer>
+			
+		</div>
+
+		<!-- VICTORY POPUP -->
+		<div class="victoryScreen">
+			<div class="victoryCard">
+				<video id="victoryVideo" autoplay loop muted src=""></video>
+				<h1 id="victoryAnnouncement">TEST VICTORY</h1>
+				<p id="victoryScoreAnnouncement">The TESTY Alliance now has 2 points!</p>
+				<p class="btn" id="victoryContinueBtn">To Battle!</p>
+			</div>
+		</div>
+
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
