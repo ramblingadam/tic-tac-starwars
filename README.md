@@ -12,7 +12,7 @@ This was my first full project using HTML, CSS, and JavaScript together. After s
 
 It was important to me to come up with a theme to make the simple, predictable gameplay more entertaining. Presentation is everything, after all! While rewatching A New Hope, it suddenly came to me- X-wings and TIE Fighters looked an awful lot like X's and O's! And so, X-Wing VS TIE Fighter was born.
 
-The JavaScript necessary for a functioning tic-tac-toe board ended up being relatively straightforward. Most of the time spent on this project was spent on the CSS and tracking down and converting media assets and fonts to use for the Star Wars theme. I learned several new CSS techniques- such as utilizing the relationship between an element's width property and it's padding-bottom property to create responsively resizable 1:1 ratio game board squares.
+The JavaScript necessary for a functioning tic-tac-toe board ended up being relatively straightforward. Most of the time spent on this project was spent on the CSS and tracking down and converting media assets, fonts, and sound effects to use for the Star Wars theme. I learned several new CSS techniques- such as utilizing the relationship between an element's width property and it's padding-bottom property to create responsively resizable 1:1 ratio game board squares.
 
 I also learned that you cannot play a JavaScript Audio object over itself, so I built an array of different sound effects for several different game events, moving onto the next Audio object in the array whenever a sound was played, in order to enable overlapping sound effects.
 
