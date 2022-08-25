@@ -19,3 +19,28 @@ I also learned that you cannot play a JavaScript Audio object over itself, so I 
 Anyways, give it a try and revel in the fandom!
 
 **May the Force be with you!**
+
+
+---
+
+## Other Projects:
+Take a look at these other awesome projects from my portfolio:
+
+#
+
+**Magic Task Timer** [https://github.com/ramblingadam/magic-task-timer](https://github.com/ramblingadam/magic-task-timer)
+
+[![Screenshot of Magic Task Timer](https://user-images.githubusercontent.com/96756923/186636834-a45327e8-90ea-4c34-b3e9-b5e5b1dfdd5b.gif)](https://user-images.githubusercontent.com/96756923/186636834-a45327e8-90ea-4c34-b3e9-b5e5b1dfdd5b.gif)
+
+
+#
+
+**Animal Crossing: New Horizons Database:** [https://github.com/ramblingadam/acnh](https://github.com/ramblingadam/acnh)
+
+[![Screenshot of ACNH Database](https://user-images.githubusercontent.com/96756923/170849487-39d5a25f-0ad3-4494-a325-d4502610b54e.gif)](https://github.com/ramblingadam/acnh)
+
+#
+
+**The Universe Console** [https://github.com/ramblingadam/nasapod](https://github.com/ramblingadam/nasapod)
+
+[![Screenshot of The Universe Console](https://user-images.githubusercontent.com/96756923/170848850-67f872fc-b92e-438b-add6-47d83673d3c9.gif)](https://github.com/ramblingadam/nasapod)
